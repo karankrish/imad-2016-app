@@ -38,7 +38,7 @@ var htmlTemplate=`
     </div>
     </body>
 </html> `
-
+;
 
 
 
