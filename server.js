@@ -10,29 +10,28 @@ var articles = {
             title:'Article One |karan krishna',
             heading:'Article one',
             date:'sep 5 2016',
-            content:'                <p>This is content for my first article</p>'
+            content:'  <p>This is content for my  article one</p>'
         },
         'article-two':{
             title:'Article Two |karan krishna',
             heading:'Article two',
             date:'sep 6 2016',
-            content:'                <p>This is content for my first article</p>'
+            content:' <p>This is content for my article one</p>'
         },
         'article-three':{
             title:'Article Three |karan krishna',
             heading:'Article three',
             date:'sep 7 2016',
-            content:'                <p>This is content for my first article</p>'
+            content:'<p>This is content for my article one</p>'
         }
 };
 
 
-function createTemplate(data)
-{
+function createTemplate(data){
     var title=title.data;
     var heading=heading.data;
     var date=date.data;
-    var content=content.data
+    var content=content.data;
 var htmlTemplate=` 
     <html>
         <head>
@@ -62,6 +61,7 @@ var htmlTemplate=`
 ;
     return htmlTemplate; 
 }
+
 app.get('/:articleName',function (req,res) {
     var articleName=req.params.articleName;
   res.send(createTemplate(articles[articleName]));
