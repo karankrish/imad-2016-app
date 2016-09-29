@@ -1,12 +1,7 @@
-console.log('Loaded!');
-
-var element=document.getElementById('main-text');
-element.innerHTML='New Value';
-
-
-var element =document.getElementById('mnk');
-img.onclick = function() {
-    
-    img.style.marginLeft ='100px';
-    
+var button=document.getElementById('counter');
+var count=0;
+button.onclick = function() {
+    count=count+1;
+    var span=document.getElementById('count');
+    span.innerHTML=count.toString();
 };
