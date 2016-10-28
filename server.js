@@ -101,7 +101,7 @@ app.get('/submit-name',function (req,res) {
 });
 
 app.get('/articles/:articlesName',function (req,res) { 
-    Pool.query("SELECT * FROM articles WHERE title =$1", [req.params.articlesName] , function(err, result){
+    pool.query("SELECT * FROM articles WHERE title =$1", [req.params.articlesName] , function(err, result){
         if(err){
             res.status(500).send(err.toString());
         }
