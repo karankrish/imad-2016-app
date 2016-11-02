@@ -45,7 +45,7 @@ nav a {
 
 .sectOne {
 
-    background-image: url("/ui/1.jpg");
+    background-image: url('/ui/1.jpg');
 }
 .sectTwo {
 background-color: white;
@@ -53,7 +53,7 @@ background-color: white;
 }
 .sectThree {
 
-  background-image: url("/ui/3.jpeg");
+  background-image: url('/ui/3.jpeg');
 }
 .name {
    padding-top: 5%;
