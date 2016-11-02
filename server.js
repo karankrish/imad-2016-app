@@ -131,11 +131,11 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 }); 
 
-app.get('/ui/main.js', function (req, res) {
+app.get('/ui/jquery-3.1.1.min.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'jquery-3.1.1.min.js'));
 }); 
 
-app.get('/ui/main.js', function (req, res) {
+app.get('/ui/animate.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'animate.css'));
 }); 
 
