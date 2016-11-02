@@ -148,19 +148,19 @@ app.get('/ui/animate.css', function (req, res) {
 
 
 
-app.get('/ui/madi.png', function (req, res) {
+app.get('/ui/1.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', '1.jpg'));
 });
 
-app.get('/ui/madi.png', function (req, res) {
+app.get('/ui/2.jpeg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', '2.jpeg'));
 });
 
-app.get('/ui/madi.png', function (req, res) {
+app.get('/ui/3.jpeg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', '3.jpeg'));
 });
 
-app.get('/ui/madi.png', function (req, res) {
+app.get('/ui/as.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'as.jpg'));
 });
 
