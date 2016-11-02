@@ -86,20 +86,20 @@ background-color: white;
 }
 .flip3D >.front {
   position: absolute;
-  -webkit- transform: perspective(60%) rotateY(0deg);
+ /* -webkit- transform: perspective(60%) rotateY(0deg);*/
   transform: perspective(60%) rotateY(0deg);
   background:yellow;
   width: 25%;
   height: 50%;
   border-radius: 1%;
-  -webkit- backface-visibility: hidden;
+  /*-webkit- backface-visibility: hidden;*/
   backface-visibility: hidden;
   transition: -webkit-transform  .5s  linear  0s;
 
 }
 .flip3D >.back {
   position: absolute;
-  -webkit-transform: perspective(60%) rotateY(180deg);
+  /*-webkit-transform: perspective(60%) rotateY(180deg);*/
   transform: perspective(60%) rotateY(180deg);
   background:cyan;
   width: 25%;
@@ -110,12 +110,12 @@ background-color: white;
   transition: -webkit-transform  .5s  linear  0s;
 }
 .flip3D:hover >.front{
-  -webkit-transform: perspective(60%) rotateY(-180deg);
+  /*-webkit-transform: perspective(60%) rotateY(-180deg);*/
   transform: perspective(60%) rotateY(-180deg);
 }
 .flip3D:hover >.back{
-  -webkit-transform: perspective(60%) rotateY(0deg);
-  transform: perspective(60%../image/1.jpg) rotateY(0deg);
+  /*-webkit-transform: perspective(60%) rotateY(0deg);*/
+  transform: perspective(60%) rotateY(0deg);
 }
 .act {
   color:rgb(25, 100, 150);
