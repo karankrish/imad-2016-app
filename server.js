@@ -4,43 +4,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-/*
-var c= 0;
-app.get('/counter',function (req, res) {
-   c = c + 1;
-   res.send(c.toString());
-   
-});
-var names=[];
-app.get('/submit-name',function (req,res) {
-   var name= req.query.name;
-   
-   names.push(name);
-   res.send(JSON.stringify(names));
-   
-});
 
-app.get('/articles/:articlesName',function (req,res) { 
-    pool.query("SELECT * FROM articles WHERE title =$1", [req.params.articlesName] , function(err, result){
-        if(err){
-            res.status(500).send(err.toString());
-        }
-        else { 
-        if (result.rows.length === 0){
-        res.status(404).send('Article not found');
-        }
-        else {
-            var articlesData=result.rows[0];
-            res.send(createTemplate(articlesData));
-        
-        }
-        }
-    });
-    
-  
-});
-
-*/
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
