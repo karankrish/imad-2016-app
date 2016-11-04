@@ -1,4 +1,4 @@
-alert("USE internet explorer ");
+
 $(document).ready(function(){
   setBindings();
 });
